@@ -1,9 +1,11 @@
 package matrius;
 
+import java.util.Scanner;
+
 public class MatriusFuncions {
 
 	public static void main(String[] args) {
-
+		Scanner sc = new Scanner(System.in);
 		// PAS 1 · Una funció és un tros de codi amb nom que es pot cridar.
 		// Ja n'heu fet servir: sc.nextInt(), Collections.sort(llista)...
 		// Ara en fem una de nostra: mostrarVides (està a sota del main).
@@ -19,6 +21,13 @@ public class MatriusFuncions {
 				{ 0, 15, 0, 5 },
 				{ 30, 0, 10, 0 }
 		};
+		
+		// OMPLIR MATRIU AMB SCANNER
+		for(int i=0; i<tauler.length; i++) {
+			for(int j=0; j<tauler[0].length; j++) {
+				tauler[i][j] = sc.nextInt();
+			}
+		}
 
 		// tauler[fila][columna]. Es compta des de 0.
 		System.out.println("Casella [1][1]: " + tauler[1][1]); // 15
