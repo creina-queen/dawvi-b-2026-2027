@@ -32,8 +32,8 @@ public class MaximMitjana {
 		
 		//Per fer la mitjana he de decidir si la vull de files o de columnes
 		//Sempre posar un dels dos valors de la divisió en decimals
-		System.out.println("Mitjana fila 1: "+(double)sumaFila(1,matriu)/matriu.length);
-		System.out.println("Mijtana columna 0: "+(double)sumaColumna(0,matriu)/matriu[0].length);
+		System.out.println("Mitjana fila 1: "+(double)sumaFila(1,matriu)/matriu[0].length);
+		System.out.println("Mijtana columna 0: "+(double)sumaColumna(0,matriu)/matriu.length);
 
 	}
 	public static int trobaMax(int[][] m) {
